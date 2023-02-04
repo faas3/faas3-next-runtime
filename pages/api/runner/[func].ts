@@ -18,7 +18,7 @@ export default async function handler(
   const mod = await getMod(func as string);
   const data = await callMod(mod, payload);
 
-  res.status(200).json({ name: data });
+  res.status(200).json({ data });
 }
 
 async function getMod(name: string) {
